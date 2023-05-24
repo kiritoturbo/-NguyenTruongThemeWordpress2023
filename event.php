@@ -4,11 +4,11 @@
     <div class="news-list">
     <?php 
         $args = array(
-            'post_status' => 'publish', // Chỉ lấy những bài viết được publish
-            'post_type' => 'post', // Lấy những bài viết thuộc post, nếu lấy những bài trong 'trang' thì để là page 
-            'showposts' => 3, // số lượng bài viết
-            'cat' => 81, // lấy bài viết trong chuyên mục có id là 1
-            // 'offset' =>1
+            'post_status' => 'publish', 
+            'post_type' => 'post', 
+            'showposts' => 3, 
+            'cat' => 81, 
+            
         );
          ?>
         <?php $getposts = new WP_query($args); ?>
@@ -29,7 +29,7 @@
 
         
         <!-- <div class="news-item">
-            <img class="img" src="<?php bloginfo('template_directory') ?>/images/news-two.png" alt="" />
+            <img class="img" src="/images/news-two.png" alt="" />
             <div class="news-item-title">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </div>
@@ -40,7 +40,7 @@
             <div class="line"></div>
         </div>
         <div class="news-item">
-            <img class="img" src="<?php bloginfo('template_directory') ?>/images/news-three.png" alt="" />
+            <img class="img" src="/images/news-three.png" alt="" />
             <div class="news-item-title">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </div>

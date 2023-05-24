@@ -26,11 +26,11 @@
                 <div class="left">
                     <?php
                     $args = array(
-                        'post_status' => 'publish', // Chỉ lấy những bài viết được publish
-                        'post_type' => 'post', // Lấy những bài viết thuộc post, nếu lấy những bài trong 'trang' thì để là page 
-                        'showposts' => 1, // số lượng bài viết
-                        'cat' => 80, // lấy bài viết trong chuyên mục có id là 1
-                        // 'offset' =>1
+                        'post_status' => 'publish', 
+                        'post_type' => 'post',  
+                        'showposts' => 1, 
+                        'cat' => 80,
+                        
                     );
                     ?>
                     <?php $getposts = new WP_query($args); ?>
@@ -41,7 +41,7 @@
                         <p class="name">Tin tức</p>
                         <h2 class="title"><?php the_title(); ?></h2>
                         <p class="desc">
-                            <?php the_excerpt(); // Lấy mô tả ngắn của bài post 
+                            <?php the_excerpt(); 
                             ?>
                         </p>
                         <p class="time"><?php echo get_the_date('d - m - Y'); ?></p>
@@ -53,10 +53,10 @@
                 <div class="right">
                     <?php
                     $args = array(
-                        'post_status' => 'publish', // Chỉ lấy những bài viết được publish
-                        'post_type' => 'post', // Lấy những bài viết thuộc post, nếu lấy những bài trong 'trang' thì để là page 
-                        'showposts' => 2, // số lượng bài viết
-                        'cat' => 80, // lấy bài viết trong chuyên mục có id là 1
+                        'post_status' => 'publish', 
+                        'post_type' => 'post', 
+                        'showposts' => 2,
+                        'cat' => 80, 
                         'offset' => 1
                     );
                     ?>
@@ -85,10 +85,10 @@
                 <div class="list">
                     <?php
                     $args = array(
-                        'post_status' => 'publish', // Chỉ lấy những bài viết được publish
-                        'post_type' => 'post', // Lấy những bài viết thuộc post, nếu lấy những bài trong 'trang' thì để là page 
-                        'showposts' => 3, // số lượng bài viết
-                        'cat' => 81, // lấy bài viết trong chuyên mục có id là 1
+                        'post_status' => 'publish',
+                        'post_type' => 'post', 
+                        'showposts' => 3, 
+                        'cat' => 81, 
                         // 'offset' =>1
                     );
                     ?>
@@ -113,40 +113,15 @@
 
 
 
-                    <!-- <div class="item">
-                        <img class="img" src="./images/astra-normal-2.png" alt="" />
-                        <p class="name green">tin tức</p>
-                        <h2 class="title">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        </h2>
-                        <p class="desc">
-                            Kết nối học viên với gia sư nhanh chóng, tiện lợi và hoàn
-                            toàn.
-                        </p>
-                        <p class="time">05/02/2021</p>
-                        <div class="line"></div>
-                    </div>
-                    <div class="item">
-                        <img class="img" src="./images/astra-normal-3.png" alt="" />
-                        <p class="name orange">Blog</p>
-                        <h2 class="title">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        </h2>
-                        <p class="desc">
-                            Kết nối học viên với gia sư nhanh chóng, tiện lợi và hoàn
-                            toàn.
-                        </p>
-                        <p class="time">05/02/2021</p>
-                        <div class="line"></div>
-                    </div> -->
+    
                 </div>
                 <div class="list">
                     <?php
                     $args = array(
-                        'post_status' => 'publish', // Chỉ lấy những bài viết được publish
-                        'post_type' => 'post', // Lấy những bài viết thuộc post, nếu lấy những bài trong 'trang' thì để là page 
-                        'showposts' => 3, // số lượng bài viết
-                        'cat' => 81, // lấy bài viết trong chuyên mục có id là 1
+                        'post_status' => 'publish', 
+                        'post_type' => 'post',  
+                        'showposts' => 3,
+                        'cat' => 81, 
                         'offset' =>3
                     );
                     ?>

@@ -260,6 +260,11 @@ a {
   line-height: 16px;
 }
 
+.list-bottom .time{
+  margin-top: 30px;
+
+}
+
 .list-bottom .list .item .line {
   margin-top: 24px;
   height: 1px;
