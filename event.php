@@ -15,7 +15,7 @@
         <?php global $wp_query; $wp_query->in_the_loop = true; ?>
         <?php while ($getposts->have_posts()) : $getposts->the_post(); ?>
             <div class="news-item">
-                <?php echo get_the_post_thumbnail(get_the_id(),'full',array('class'=>'thumnail')); ?>
+                <a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail(get_the_id(),'full',array('class'=>'thumnail')); ?></a>  
                 <div class="news-item-title">
                     <?php the_title(); ?>
                 </div>
