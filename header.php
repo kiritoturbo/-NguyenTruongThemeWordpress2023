@@ -11,7 +11,7 @@
 </head>
 
 <body>
-
+<?php $imgageLogo= get_field('image_logo')?>
     <header class="header">
         <div class="wrapper">
             <label for="menu-input" class="menu-icon">
@@ -21,13 +21,13 @@
             <div class="nav-mobile">
                 <div class="wrap">
                     <div class="logo">
-                        <a href="<?php bloginfo('url') ?>"><img src="<?php bloginfo('template_directory') ?>/images/logo.png" alt="" /></a>
+                        <a href="<?php bloginfo('url') ?>"><img style="max-width: 150px;height: 64px;object-fit:cover;" src="<?php echo ((get_field('image_logo'))['url'] ); ?>" alt="" /></a>
                     </div>
                     <label for="menu-input">
                         <img src="<?php bloginfo('template_directory') ?>/images/close-icon.png" alt="" />
                     </label>
                 </div>
-                <!-- <ul class="nav-mobile-list"> -->
+                
                     <?php wp_nav_menu( 
                     array( 
                         'theme_location' => 'topmenu', 
@@ -36,28 +36,10 @@
                         'menu_class' => 'nav-list'
                     ) 
                     ); ?>
-                    <!-- <li class="nav-mobile-item">
-                        <a href="" class="nav-mobile-link active">Trang chủ</a>
-                    </li>
-                    <li class="nav-mobile-item">
-                        <a href="" class="nav-mobile-link">Về chúng tôi</a>
-                    </li>
-                    <li class="nav-mobile-item">
-                        <a href="" class="nav-mobile-link">Đội ngũ sáng lập</a>
-                    </li>
-                    <li class="nav-mobile-item">
-                        <a href="" class="nav-mobile-link">Liên hệ</a>
-                    </li>
-                    <li class="nav-mobile-item">
-                        <a href="" class="nav-mobile-link">Dịch vụ</a>
-                    </li>
-                    <li class="nav-mobile-item">
-                        <a href="" class="nav-mobile-link">Akadon News</a>
-                    </li> -->
-                <!-- </ul> -->
+                   
             </div>
-            <div class="logo">
-                <a href="<?php bloginfo('url') ?>"><img src="<?php bloginfo('template_directory') ?>/images/logo.png" alt="" /></a>
+            <div class="logo" >
+                <a href="<?php bloginfo('url') ?>"><img style="max-width: 150px;height: 64px;object-fit:cover;" src="<?php echo ((get_field('image_logo'))['url'] ); ?>" alt="" /></a>
             </div>
             <div class="nav">
                 <!-- <ul class="nav-list"> -->
@@ -69,25 +51,7 @@
                                 'menu_class' => 'nav-list'
                             ) 
                     ); ?>
-                    <!-- <li class="nav-item">
-                        <a href="" class="nav-item-link active">Trang chủ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-item-link">Về chúng tôi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-item-link">Đội ngũ sáng lập</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-item-link">Liên hệ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-item-link">Dịch vụ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-item-link">Akadon News</a>
-                    </li> -->
-                <!-- </ul> -->
+                    
             </div>
             <div class="language">
                 <img class="language-flag" src="<?php bloginfo('template_directory') ?>/images/vietnam-flag.png" alt="" />

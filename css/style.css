@@ -35,12 +35,20 @@
   border: 1px solid #e8e8e8;
   border-radius: 6px;
 }
+@font-face {
+  font-family: SVN-Gilroy;
+  src: url("./Fonts/SVN-Gilroy\ Regular.otf"),
+    url("/Fonts/SVN-Gilroy\ Bold.otf"), url("/Fonts/SVN-Gilroy\ Heavy.otf"),
+    url("/Fonts/SVN-Gilroy\ SemiBold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
 
 *,
 *:before,
 *:after {
   box-sizing: border-box;
-  font-family: "SVN-Gilroy";
+  font-family: 'SVN-Gilroy', monospace;
   margin: 0;
   padding: 0;
 }
@@ -55,14 +63,6 @@
   font-style: normal;
 } */
 
-@font-face {
-  font-family: SVN-Gilroy;
-  src: url("./Fonts/SVN-Gilroy\ Regular.otf"),
-    url("/Fonts/SVN-Gilroy\ Bold.otf"), url("/Fonts/SVN-Gilroy\ Heavy.otf"),
-    url("/Fonts/SVN-Gilroy\ SemiBold.otf");
-  font-weight: normal;
-  font-style: normal;
-}
 
 img,
 picture,
@@ -72,7 +72,7 @@ video {
   max-width: 100%;
 }
 
-.news-item img{
+.news-item img {
   border-radius: 6px;
   object-fit: cover;
   height: 208px;
@@ -208,6 +208,7 @@ a {
   margin-top: 4px;
 }
 
+
 .list-bottom {
   display: flex;
   flex-direction: column;
@@ -238,13 +239,19 @@ a {
   text-transform: uppercase;
 }
 
+
+
+
 .list-bottom .list .item .title {
   font-size: 20px;
   font-weight: 600;
   line-height: 26px;
   margin-top: 5px;
   margin-bottom: 12px;
+  min-height: 52px;
 }
+
+
 
 .list-bottom .list .item .desc {
   font-weight: 500;
@@ -260,7 +267,7 @@ a {
   line-height: 16px;
 }
 
-.list-bottom .time{
+.list-bottom .time {
   margin-top: 30px;
 
 }
@@ -688,37 +695,37 @@ a {
   color: #929292;
 }
 
-.list-top .left img{
+.list-top .left img {
   max-height: 334px;
   object-fit: cover;
 }
 
-.list-top .right img{
+.list-top .right img {
   max-height: 148px;
   object-fit: cover;
 }
 
-.list-bottom .item img{
+.list-bottom .item img {
   max-height: 208px;
   object-fit: cover;
   min-width: 312px;
 }
 
-.footer-navbar ul{
+.footer-navbar ul {
   display: flex;
   gap: 38px;
 }
 
-.post-content p:first-child{
+.post-content p:first-child {
   margin-top: 16px;
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 
-.post-content img{
+.post-content img {
   /* max-width: 800px; */
   margin: 30px auto;
-  
+
 }
 
 .news .news-list .news-item .time {
@@ -898,6 +905,9 @@ a {
     right: 0;
   }
 
+
+
+
   .header .wrapper .nav {
     display: none;
   }
@@ -1054,3 +1064,6 @@ a {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+

@@ -22,7 +22,7 @@
         <div class="astra">
 
             <section class="list-top">
-
+                
                 <div class="left">
                     <?php
                     $args = array(

@@ -4,16 +4,12 @@
       <section class="hero">
         <div class="hero-content">
           <h1 class="heading">
-            Nền tảng kết nối gia sư và học viên hàng đầu Hiện nay!
+              <?php echo esc_html( get_field('dong_so_1_chu_to') ); ?>
           </h1>
           <p class="description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio vitae
-            cum fermentum vivamus elit dui tempus. Pharetra id bibendum lorem
-            consectetur venenatis. At felis egestas faucibus tincidunt pulvinar
-            nibh quam eu. Mattis congue donec phasellus adipiscing faucibus
-            massa turpis vel, nam.
+              <?php echo esc_html( get_field('dong_so_2_chu_to') ); ?>
           </p>
-          <a href="" class="link">TÌm hiểu thêm</a>
+          <a href="" class="link"><?php echo esc_html( get_field('add_more') ); ?></a>
           <a href="" class="link-arrow">
             <svg
               width="16"
@@ -146,5 +142,9 @@
       <?php get_template_part('event');?>
       <?php get_template_part('contact'); ?>
     </main>
+
+
+
+    <?php the_field('homepage'); ?>
 
  <?php get_footer()?>

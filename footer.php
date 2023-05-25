@@ -11,36 +11,20 @@
                                 'menu_class' => 'nav-list'
                             ) 
                     ); ?>
-            <!-- <li class="item">
-              <a href="" class="item-link">Trang chủ</a>
-            </li>
-            <li class="item">
-              <a href="" class="item-link">Về chúng tôi</a>
-            </li>
-            <li class="item">
-              <a href="" class="item-link">Đội ngũ sáng lập</a>
-            </li>
-            <li class="item">
-              <a href="" class="item-link">Sản phẩm</a>
-            </li>
-            <li class="item">
-              <a href="" class="item-link">Akadon News</a>
-            </li> -->
-          <!-- </ul> -->
         </div>
         <div class="footer-content">
-          <h2 class="heading">Công ty TNHH Công nghệ Ứng dụng AKADON</h2>
+          <h2 class="heading"><?php echo esc_html( get_field('ten_cong_ty') ); ?></h2>
           <div class="item">
             <p class="text">Mã số doanh nghiệp:</p>
-            <p class="text">0107979500</p>
+            <p class="text"><?php echo get_field('ma_so_doanh_nghiep'); ?></p>
           </div>
           <div class="item">
             <p class="text">Đại diện doanh nghiệp:</p>
-            <p class="text">Văn Thị Thu Nhiên</p>
+            <p class="text"><?php echo get_field('dai_dien_doanh_nghiep'); ?></p>
           </div>
           <div class="item">
             <p class="text">Chức vụ:</p>
-            <p class="text">Giám đốc điều hành</p>
+            <p class="text"><?php echo get_field('chuc_vu'); ?></p>
           </div>
         </div>
         <div class="line"></div>
