@@ -55,4 +55,9 @@
     <div class="see-more">
         <a href="" class="link">Xem thêm</a>
     </div>
+    <div style="display:flex;max-width:900px;margin:0 auto;list-style:none;gap:50px;">
+        <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar') ) : ?><?php endif; ?>
+        <!-- <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('customsidebar') ) : ?><?php endif; ?> -->
+        
+    </div>
 </section>
