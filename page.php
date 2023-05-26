@@ -1,8 +1,7 @@
 <?php get_header()?>
 <!-- get feild   -->
-
     <main class="main">
-      <section class="hero" style="background-image: url(<?php echo get_field('image_background'); ?>);">
+      <section class="hero" style="background-image: url(<?php echo get_field('image_background'); ?> );">
         <div class="hero-content">
           <h1 class="heading">
             <?php echo esc_html( get_field('dong_so_1_chu_to') ); ?>

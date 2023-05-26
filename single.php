@@ -3,7 +3,15 @@
       <div class="wrapper details">
         <div class="astra-details-nav">
           <div class="list">
-            <div class="item">
+            <!-- <?php if(!is_home()){ ?> -->
+              <!-- <?php
+                if ( function_exists( 'yoast_breadcrumb' ) ) {
+                    yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+                }
+            ?> -->
+            <?php the_breadcrumb(); ?>
+            <!-- <?php } ?> -->
+            <!-- <div class="item">
               <span>Trang chủ</span>
               <span
                 ><svg
@@ -63,7 +71,7 @@
             </div>
             <div class="detail-title">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="astra-details-content">

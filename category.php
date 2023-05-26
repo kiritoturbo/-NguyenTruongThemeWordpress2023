@@ -2,6 +2,12 @@
 
 <main class="main">
     <div class="wrapper details">
+        <!-- <?php
+            if ( function_exists( 'yoast_breadcrumb' ) ) {
+                yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+            }
+        ?> -->
+
         <div class="astra-nav">
             <ul class="list">
                 
