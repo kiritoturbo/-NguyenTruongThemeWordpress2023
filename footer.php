@@ -13,7 +13,15 @@
                     ); ?>
         </div>
         <div class="footer-content">
-          <h2 class="heading"><?php echo esc_html( get_field('ten_cong_ty') ); ?></h2>
+          <h2 class="heading">
+            <!-- <?php echo esc_html( get_field('ten_cong_ty') ); ?> -->
+            <?php 
+                  global $post;
+                  $value = get_post_meta( $post->ID, 'companyName', true );
+                  echo $value;
+                  // die();
+              ?>
+          </h2>
           <div class="item">
             <p class="text">Mã số doanh nghiệp:</p>
             <p class="text"><?php echo get_field('ma_so_doanh_nghiep'); ?></p>

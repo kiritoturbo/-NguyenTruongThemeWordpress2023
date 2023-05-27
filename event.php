@@ -1,6 +1,6 @@
 <section class="news">
     <h2 class="title">tin tức và sự kiện</h2>
-    <h1 class="heading">các tin tức và sự kiện mới của akadon</h1>
+    <h1 class="heading">các tin tức và sự kiện mới của <?php bloginfo('name');?></h1>
     <div class="news-list">
     <?php 
         $args = array(
@@ -20,7 +20,7 @@
                     <?php the_title(); ?>
                 </div>
                 <p class="desc">
-                    Kết nối học viên với gia sư nhanh chóng, tiện lợi và hoàn toàn.
+                   <?php the_excerpt()?>
                 </p>
                 <p class="time"><?php echo get_the_date('d - m -Y');?></p>
                 <div class="line"></div>
