@@ -4,7 +4,7 @@
     <div class="wrapper details">
         <div class="astra-nav">
             <ul class="list">
-                
+
                 <li class="item ">
                     <a href="" class="item-link active">Tất cả</a>
                 </li>
@@ -22,15 +22,15 @@
         <div class="astra">
 
             <section class="list-top">
-                
+
                 <div class="left">
                     <?php
                     $args = array(
-                        'post_status' => 'publish', 
-                        'post_type' => 'post',  
-                        'showposts' => 1, 
+                        'post_status' => 'publish',
+                        'post_type' => 'post',
+                        'showposts' => 1,
                         'cat' => 80,
-                        
+
                     );
                     ?>
                     <?php $getposts = new WP_query($args); ?>
@@ -41,7 +41,7 @@
                         <p class="name">Tin tức</p>
                         <h2 class="title"><?php the_title(); ?></h2>
                         <p class="desc">
-                            <?php the_excerpt(); 
+                            <?php the_excerpt();
                             ?>
                         </p>
                         <p class="time"><?php echo get_the_date('d - m - Y'); ?></p>
@@ -53,10 +53,10 @@
                 <div class="right">
                     <?php
                     $args = array(
-                        'post_status' => 'publish', 
-                        'post_type' => 'post', 
+                        'post_status' => 'publish',
+                        'post_type' => 'post',
                         'showposts' => 2,
-                        'cat' => 80, 
+                        'cat' => 80,
                         'offset' => 1
                     );
                     ?>
@@ -86,9 +86,9 @@
                     <?php
                     $args = array(
                         'post_status' => 'publish',
-                        'post_type' => 'post', 
-                        'showposts' => 3, 
-                        'cat' => 81, 
+                        'post_type' => 'post',
+                        'showposts' => 3,
+                        'cat' => 81,
                         // 'offset' =>1
                     );
                     ?>
@@ -113,16 +113,16 @@
 
 
 
-    
+
                 </div>
                 <div class="list">
                     <?php
                     $args = array(
-                        'post_status' => 'publish', 
-                        'post_type' => 'post',  
+                        'post_status' => 'publish',
+                        'post_type' => 'post',
                         'showposts' => 3,
-                        'cat' => 81, 
-                        'offset' =>3
+                        'cat' => 81,
+                        'offset' => 3
                     );
                     ?>
                     <?php $getposts = new WP_query($args); ?>

@@ -14,7 +14,7 @@
 
             <ul class="list">
                 <!-- // Get term by id (''term_id'') in Categories taxonomy. -->
-                <?php $test = get_term_by('id', 80, 'category'); ?>
+                <?php $test = get_term_by('id', get_queried_object_id(), 'category'); ?>
                 <!-- // echo '<pre>';
                     // print_r ($test);
                     // echo '</pre>'; -->
@@ -129,7 +129,7 @@
                     $args = array(
                         'post_status' => 'publish', // Chỉ lấy những bài viết được publish
                         'showposts' => 2, // số lượng bài viết
-                        'offset' =>1
+                        'offset' => 1
                     );
                     ?>
                     <?php $getposts = new WP_query($args); ?>
@@ -137,13 +137,13 @@
                     $wp_query->in_the_loop = true; ?>
                     <?php while ($getposts->have_posts()) : $getposts->the_post(); ?>
                         <div class="item">
-                                <a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail(get_the_id(), 'full', array('class' => 'thumnail')); ?></a>
-                                <p class="name">Sự kiện</p>
-                                <h2 class="title">
-                                    <?php the_title(); ?>
-                                </h2>
-                                <p class="time"><?php echo get_the_date('d - m - Y'); ?></p>
-                                <div class="line"></div>
+                            <a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail(get_the_id(), 'full', array('class' => 'thumnail')); ?></a>
+                            <p class="name">Sự kiện</p>
+                            <h2 class="title">
+                                <?php the_title(); ?>
+                            </h2>
+                            <p class="time"><?php echo get_the_date('d - m - Y'); ?></p>
+                            <div class="line"></div>
                         </div>
                     <?php endwhile;
                     wp_reset_postdata(); ?>
