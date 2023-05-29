@@ -119,6 +119,7 @@ function showAdminMessages()
             }
 
             echo '<p><strong><a href="' . admin_url( 'plugins.php' ) .'" class="button">Check Now</a></strong></p>';
+            // echo '<button type="button" class="notice-dismiss"><span class="screen-reader-text">Bỏ qua thông báo này </span></button>';
 
         echo '</div>';
     }
@@ -257,4 +258,41 @@ add_action('save_post','truongnguyen_footer_thongtin_save');
 //     );
     
 //   }
-//   add_action( 'after_setup_theme', 'mytheme_setup_theme_supported_features' );
+// //   add_action( 'after_setup_theme', 'mytheme_setup_theme_supported_features' );
+
+
+
+
+// function html5wp_pagination()
+// {
+// global $wp_query;
+// $big = 999999999;
+// $pages = paginate_links(array(
+// 'base' => str_replace($big, '%#%', get_pagenum_link($big)),
+// 'format' => '?paged=%#%',
+// 'current' => max(1, get_query_var('paged')),
+// 'total' => $wp_query->max_num_pages,
+// 'type'  => 'array',
+// ));
+// if( is_array( $pages ) ) {
+// $paged = ( get_query_var('paged') == 0 ) ? 1 : get_query_var('paged');
+// echo '<div class="text-center"><ul class="pagination bounceInUp animated wow" data-wow-delay=".8s">';
+// foreach ( $pages as $page ) {
+// echo "<li>$page</li>";
+// }
+// echo '</ul></div>';
+// }
+// }
+
+
+
+//theme options 
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page(array(
+		'page_title' 	=> 'Theme options', // Title hiển thị khi truy cập vào Options page
+		'menu_title'	=> 'Theme options', // Tên menu hiển thị ở khu vực admin
+		'menu_slug' 	=> 'theme-settings', // Url hiển thị trên đường dẫn của options page
+		'capability'	=> 'edit_posts',
+		'redirect'	=> false
+	));
+}

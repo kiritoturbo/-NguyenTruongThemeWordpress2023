@@ -1074,6 +1074,10 @@ a {
     margin: 30px auto;
   }
 
+ .quatrang{
+    margin: 38px auto;
+  }
+
   .about {
     flex-direction: column;
     padding: 0 20px;

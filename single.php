@@ -77,7 +77,7 @@
         <div class="astra-details-content">
 
 
-                    <!-- Get post mặt định -->
+            <!-- Get post mặt định -->
             <?php if (have_posts()) : ?>
             <?php while (have_posts()) : the_post(); ?>
                 <h1 class="heading">

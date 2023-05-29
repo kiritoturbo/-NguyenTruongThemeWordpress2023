@@ -10,7 +10,7 @@
 
         <div class="astra-nav">
             <!-- lấy tên danh mục  single_cat_title() -->
-            <h1>KẾT QUẢ TÌM KIẾM</h1>
+            <h1 style="margin-bottom:30px">KẾT QUẢ TÌM KIẾM</h1>
 
             <ul class="list">
             <!-- // Get term by id (''term_id'') in Categories taxonomy. -->
@@ -67,7 +67,7 @@
         </div>
         <div class="astra">
 
-            <section class="list-top">
+            <!-- <section class="list-top">
                 
                 <div class="left">
                     <?php
@@ -125,7 +125,7 @@
 
                 </div>
 
-            </section>
+            </section> -->
 
             <section class="list-bottom">
                 <!-- <div class="list">
